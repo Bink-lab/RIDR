@@ -1,9 +1,39 @@
+# Modules
 import requests
 import json
 import keyboard
+from colorama import Fore, Style
 
-def n():
-    print("")
+#################################################################################################################
+# Functions
+def check_user(id):
+    url = "https://users.roblox.com/v1/users/" + id
+    response = requests.get(url)
+    data = json.loads(response.text)
+    return data
+def check_friends(id):
+    url = 'https://friends.roblox.com/v1/users/' + id + '/friends/count'
+    response = requests.get(url)
+    data = json.loads(response.text)
+    return data
+
+def check_premium(id):
+    url = 'https://premiumfeatures.roblox.com/v1/users/' + id + '/validate-membership'
+    response = requests.get(url)
+    data = json.loads(response.text)
+    return data
+
+def check_followers(id):
+    url = 'https://friends.roblox.com/v1/users/' + id + '/followings/count'
+    response = requests.get(url)
+    data = json.loads(response.text)
+    return data
+
+def print_colored(text, color):
+    colored_text = f"{color}{text}{Style.RESET_ALL}"
+    print(colored_text)
+
+#################################################################################################################
 
 print(""" ______  _________ _        _             _        _______  ______  
 (  ___ \ \__   __/( (    /|| \    /\     ( \      (  ___  )(  ___ \ 
@@ -15,35 +45,48 @@ print(""" ______  _________ _        _             _        _______  ______
 |/ \___/ \_______/|/    )_)|_/    \/     (_______/|/     \||/ \___/ 
                                                                     \n""")
 
-print("This code is made for the purpose of learning how to use the roblox API\n")
-print("Please dont abuse :)\n")
+print("This code is made for the purpose of learning how to use the roblox API.\n")
 
-def check(id):
-    url = "https://users.roblox.com/v1/users/" + id
-    response = requests.get(url)
-    data = json.loads(response.text)
-    return data
-
-
+#################################################################################################################
+# Get data
 id = input("Enter the id: ")
-data = check(id)
-if "name" in data:
-    n()
-    print("The name of this user is: " + data["name"])
-n()
-if "description" in data:
-    print("The description of this user is: " + data["description"])
-n()
-if "created" in data:
-    print("The creation date of this user is: " + data["created"])
-n()
-if "isBanned" in data:
-    print("Ban status of this user is: " + str(data["isBanned"]))
-n()
+user_data = check_user(id)
+friends_data = check_friends(id)
+check_premium = check_premium(id)
+check_followers = check_followers(id)
 
+print_colored("\nSome user information", Fore.GREEN)
+
+if "name" in user_data:
+    print("\nThe name of this user is: " + user_data["name"])
+
+if "description" in user_data:
+    print("\nThe description of this user is: " + user_data["description"])
+
+if "count" in friends_data:
+    print("\nThe user has " + str(friends_data["count"]) + " friends")
+
+if "count" in check_followers:
+    print("\nThe user has " + str(check_followers["count"]) + " followers")
+
+if "created" in user_data:
+    print("\nThe creation date of this user is: " + user_data["created"])
+
+if "isBanned" in user_data:
+    print("\nBan status of this user is: " + str(user_data["isBanned"]))
+
+# Check for premium subscription
+print_colored("\nPremium subscription?", Fore.YELLOW)
+if "True" in check_premium:
+    print("\nThis user has a premium subscription")
+elif "False" in check_premium:
+    print("\nThis user does not have a premium subscription")
+else:
+    print("\nSomething went wrong...\n")
+#################################################################################################################
+
+# Credits :)
 print("Made with love by sidney :)")
-print("Github: https://github.com/Bink-lab")
-n()
+print("Github: https://github.com/Bink-lab\n")
 print("Press 'esc' to exit")
 keyboard.wait("esc")
-exit()
