@@ -1,8 +1,6 @@
 import requests
 import json
 import keyboard
-import webbrowser
-import time
 
 def n():
     print("")
