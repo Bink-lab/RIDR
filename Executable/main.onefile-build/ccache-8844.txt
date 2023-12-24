@@ -1,0 +1,70 @@
+[2023-12-24T23:51:06.510968 9716 ] === CCACHE 4.8.2 STARTED =========================================
+[2023-12-24T23:51:06.511103 9716 ] Configuration file: C:\Users\sidne\AppData\Local\Nuitka\Nuitka\Cache\ccache\ccache.conf
+[2023-12-24T23:51:06.511124 9716 ] System configuration file: C:\ProgramData\ccache\ccache.conf
+[2023-12-24T23:51:06.511124 9716 ] Config: (default) absolute_paths_in_stderr = false
+[2023-12-24T23:51:06.511124 9716 ] Config: (default) base_dir = 
+[2023-12-24T23:51:06.511124 9716 ] Config: (environment) cache_dir = C:\Users\sidne\AppData\Local\Nuitka\Nuitka\Cache\ccache
+[2023-12-24T23:51:06.511124 9716 ] Config: (default) compiler = 
+[2023-12-24T23:51:06.511124 9716 ] Config: (default) compiler_check = mtime
+[2023-12-24T23:51:06.511124 9716 ] Config: (default) compiler_type = auto
+[2023-12-24T23:51:06.511124 9716 ] Config: (default) compression = true
+[2023-12-24T23:51:06.511124 9716 ] Config: (default) compression_level = 0
+[2023-12-24T23:51:06.511124 9716 ] Config: (default) cpp_extension = 
+[2023-12-24T23:51:06.511124 9716 ] Config: (default) debug = false
+[2023-12-24T23:51:06.511124 9716 ] Config: (default) debug_dir = 
+[2023-12-24T23:51:06.511124 9716 ] Config: (default) depend_mode = false
+[2023-12-24T23:51:06.511124 9716 ] Config: (default) direct_mode = true
+[2023-12-24T23:51:06.511124 9716 ] Config: (default) disable = false
+[2023-12-24T23:51:06.511124 9716 ] Config: (default) extra_files_to_hash = 
+[2023-12-24T23:51:06.511124 9716 ] Config: (default) file_clone = false
+[2023-12-24T23:51:06.511124 9716 ] Config: (default) hard_link = false
+[2023-12-24T23:51:06.511124 9716 ] Config: (default) hash_dir = true
+[2023-12-24T23:51:06.511124 9716 ] Config: (default) ignore_headers_in_manifest = 
+[2023-12-24T23:51:06.511124 9716 ] Config: (default) ignore_options = 
+[2023-12-24T23:51:06.511124 9716 ] Config: (default) inode_cache = true
+[2023-12-24T23:51:06.511124 9716 ] Config: (default) keep_comments_cpp = false
+[2023-12-24T23:51:06.511124 9716 ] Config: (environment) log_file = C:\Users\sidne\DOCUME~1\VISUAL~1\RAPI\RID-RO~1\main.onefile-build\ccache-8844.txt
+[2023-12-24T23:51:06.511124 9716 ] Config: (default) max_files = 0
+[2023-12-24T23:51:06.511124 9716 ] Config: (default) max_size = 5.0 GiB
+[2023-12-24T23:51:06.511124 9716 ] Config: (default) msvc_dep_prefix = Note: including file:
+[2023-12-24T23:51:06.511124 9716 ] Config: (default) namespace = 
+[2023-12-24T23:51:06.511124 9716 ] Config: (default) path = 
+[2023-12-24T23:51:06.511124 9716 ] Config: (default) pch_external_checksum = false
+[2023-12-24T23:51:06.511124 9716 ] Config: (default) prefix_command = 
+[2023-12-24T23:51:06.511124 9716 ] Config: (default) prefix_command_cpp = 
+[2023-12-24T23:51:06.511124 9716 ] Config: (default) read_only = false
+[2023-12-24T23:51:06.511124 9716 ] Config: (default) read_only_direct = false
+[2023-12-24T23:51:06.511124 9716 ] Config: (default) recache = false
+[2023-12-24T23:51:06.511124 9716 ] Config: (default) remote_only = false
+[2023-12-24T23:51:06.511124 9716 ] Config: (default) remote_storage = 
+[2023-12-24T23:51:06.511124 9716 ] Config: (default) reshare = false
+[2023-12-24T23:51:06.511124 9716 ] Config: (default) run_second_cpp = true
+[2023-12-24T23:51:06.511124 9716 ] Config: (environment) sloppiness = include_file_ctime, include_file_mtime
+[2023-12-24T23:51:06.511124 9716 ] Config: (default) stats = true
+[2023-12-24T23:51:06.511124 9716 ] Config: (default) stats_log = 
+[2023-12-24T23:51:06.511124 9716 ] Config: (default) temporary_dir = C:\Users\sidne\AppData\Local\Nuitka\Nuitka\Cache\ccache/tmp
+[2023-12-24T23:51:06.511124 9716 ] Config: (default) umask = 
+[2023-12-24T23:51:06.511220 9716 ] Command line: C:\Users\sidne\AppData\Local\Nuitka\Nuitka\Cache\downloads\gcc\x86_64\13.2.0-16.0.6-11.0.1-msvcrt-r1\mingw64\bin\ccache.exe C:\Users\sidne\AppData\Local\Nuitka\Nuitka\Cache\downloads\gcc\x86_64\13.2.0-16.0.6-11.0.1-msvcrt-r1\mingw64\bin\gcc.exe -o static_src\OnefileBootstrap.o -c -flto=12 -fuse-linker-plugin -fno-fat-lto-objects -std=c11 -fvisibility=hidden -fwrapv -pipe -fpartial-inlining -ftrack-macro-expansion=0 -Wno-deprecated-declarations -fno-var-tracking -Wno-misleading-indentation -fcompare-debug-second -O3 -D_WIN32_WINNT=0x0501 -D__NUITKA_NO_ASSERT__ -DMS_WIN64 -D_NUITKA_ONEFILE_MODE -IC:\Users\sidne\AppData\Local\Programs\Python\PYTHON~1\Lib\SITE-P~1\nuitka\build\inline_copy\zlib -I. -IC:\Users\sidne\AppData\Local\Programs\Python\PYTHON~1\Lib\SITE-P~1\nuitka\build\include -IC:\Users\sidne\AppData\Local\Programs\Python\PYTHON~1\Lib\SITE-P~1\nuitka\build\static_src -IC:\Users\sidne\AppData\Local\Programs\Python\PYTHON~1\Lib\SITE-P~1\nuitka\build\inline_copy\zstd static_src\OnefileBootstrap.c
+[2023-12-24T23:51:06.516375 9716 ] Hostname: DESKTOP-58C12N3
+[2023-12-24T23:51:06.516402 9716 ] Working directory: C:/Users/sidne/DOCUME~1/VISUAL~1/RAPI/RID-RO~1/main.onefile-build
+[2023-12-24T23:51:06.516416 9716 ] Compiler: C:\Users\sidne\AppData\Local\Nuitka\Nuitka\Cache\downloads\gcc\x86_64\13.2.0-16.0.6-11.0.1-msvcrt-r1\mingw64\bin\gcc.exe
+[2023-12-24T23:51:06.516423 9716 ] Compiler type: gcc
+[2023-12-24T23:51:06.516766 9716 ] Source file: static_src\OnefileBootstrap.c
+[2023-12-24T23:51:06.516786 9716 ] Object file: static_src\OnefileBootstrap.o
+[2023-12-24T23:51:06.516926 9716 ] Trying direct lookup
+[2023-12-24T23:51:06.517067 9716 ] Manifest key: 22cd6k46htq85m1vkkfab8t3j0tar6u1c
+[2023-12-24T23:51:06.522884 9716 ] Retrieved 22cd6k46htq85m1vkkfab8t3j0tar6u1c from local storage (C:\Users\sidne\AppData\Local\Nuitka\Nuitka\Cache\ccache/2/2/cd6k46htq85m1vkkfab8t3j0tar6u1cM)
+[2023-12-24T23:51:06.599580 9716 ] Got result key from manifest
+[2023-12-24T23:51:06.599609 9716 ] Result key: 3f6b559g0v65k2glagkjigo4o9i8vkr0a
+[2023-12-24T23:51:06.605530 9716 ] Retrieved 3f6b559g0v65k2glagkjigo4o9i8vkr0a from local storage (C:\Users\sidne\AppData\Local\Nuitka\Nuitka\Cache\ccache/3/f/6b559g0v65k2glagkjigo4o9i8vkr0aR)
+[2023-12-24T23:51:06.606372 9716 ] Reading embedded entry #0 .o (583379 bytes)
+[2023-12-24T23:51:06.606411 9716 ] Writing to static_src\OnefileBootstrap.o
+[2023-12-24T23:51:06.607536 9716 ] Succeeded getting cached result
+[2023-12-24T23:51:06.607653 9716 ] Result: direct_cache_hit
+[2023-12-24T23:51:06.607665 9716 ] Result: local_storage_hit
+[2023-12-24T23:51:06.607671 9716 ] Result: local_storage_read_hit
+[2023-12-24T23:51:06.607676 9716 ] Result: local_storage_read_hit
+[2023-12-24T23:51:06.607690 9716 ] Acquiring C:\Users\sidne\AppData\Local\Nuitka\Nuitka\Cache\ccache/f/4/stats.lock
+[2023-12-24T23:51:06.608365 9716 ] Acquired C:\Users\sidne\AppData\Local\Nuitka\Nuitka\Cache\ccache/f/4/stats.lock
+[2023-12-24T23:51:06.609216 9716 ] Releasing C:\Users\sidne\AppData\Local\Nuitka\Nuitka\Cache\ccache/f/4/stats.lock
+[2023-12-24T23:51:06.609309 9716 ] Released C:\Users\sidne\AppData\Local\Nuitka\Nuitka\Cache\ccache/f/4/stats.lock
