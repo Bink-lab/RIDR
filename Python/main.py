@@ -80,9 +80,9 @@ if "isBanned" in user_data:
 # Check for premium subscription
 print_colored("\nPremium subscription?", Fore.YELLOW)
 if check_premium:
-    print("\nThis user has a premium subscription\n")
+    print("\nThis user has a premium subscription (might be broken)\n")
 elif not check_premium:
-    print("\nThis user does not have a premium subscription\n")
+    print("\nThis user does not have a premium subscription (might be broken)\n")
 else:
     print("\nSomething went wrong...\n")
 #################################################################################################################
